@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Aptitude Online</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="ionicons/css/ionicons.min.css" type="text/css" media="screen" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/jquery-3.2.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/offcanvas.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+   </head>
+   <body>
+       <header class="main-header fixed-top">
+           <nav class="navigation navigation--top navigation-primary d-none d-sm-block d-md-block d-lg-block">
+               <div class="container-fluid">
+                    <div class="header">
+                    <div class="row">
+                            <div class="col-md-3">
+                               <div class="logo pull-left">
+                                  <h1>meritwall</h1>
+                               </div>
+                            </div>
+                            <div class="col-md-9">
+                               <div class="row pt-1">
+                                  <div class="col-md-7">
+                                        <div class="site-search">
+                                                <form class="form-inline" role="search">
+                                                        <div class="input-group add-on">
+                                                          <input class="form-control col-md-12" placeholder="Google Custom Search" name="srch-term" type="text">
+                                                          <div class="input-group-btn">
+                                                            <button class="btn btn-default" type="submit"><span class="ion-ios-search"></span></button>
+                                                          </div>
+                                                        </div>
+                                                      </form>
+                                             </div>
+                                  </div>
+                                  <div class="col-md-5">
+                                          <div class="row credentials">
+                                                  <div class="col-md-12">
+                                                     <ul class="nav float-right">
+                                                         <li class="nav-item">
+                                                                <a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">Login</a>                                                                
+                                                         </li>
+                                                         <li class="nav-item">
+                                                                <a href="#" class="nav-link" data-toggle="modal" data-target="#sign-up-modal">Sign-up</a>
+                                                        </li>
+                                                     </ul>
+                                                  </div>
+                                              </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                    </div>
+               </div>
+           </nav>
+           <nav id="navigation-secondary" class="navbar navigation-secondary navbar-expand-sm d-none d-sm-block d-md-block d-lg-block">
+                <div class="container-fluid">
+                   <ul class="navbar-nav">
+                      <li class="nav-item">
+                         <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="#">Quantitative</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="#">Online Tests</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#">verbal</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Non Verbal</a>
+                            </li>
+                   </ul>
+                </div>
+             </nav>
+            <nav class="navbar-toggleable-md navbar-inverse bg-inverse navigation-middle d-xs-block d-sm-none d-md-none d-lg-none">
+                <div class="menu-container">
+                    <div class="row mobile-nav">
+                        <div class="col">
+                            <div class="mobile-logo">
+                                <span>meritwall</span>
+                            </div>
+                        </div>
+                        <div class="col float-right">
+                            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="ion ion-navicon-round"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="navbar-collapse collapse mb-2" id="navbarsearch" aria-expanded="false">
+                        <form class="form-inline">
+                            <input class="form-control col-md-12 mr-sm-2" type="text" placeholder="Search">
+                        </form>
+                    </nav>
+                   <nav class="navbar-collapse collapse" id="navbarsExampleDefault" aria-expanded="false">
+                        <div class="site-search">
+                                <form class="form-inline" role="search">
+                                        <div class="input-group add-on">
+                                          <input class="form-control col-md-12" placeholder="Google Custom Search" name="srch-term" type="text">
+                                          <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><span class="ion-ios-search"></span></button>
+                                          </div>
+                                        </div>
+                                      </form>
+                        </div>
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Quantitative</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Online Tests</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Verbal</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Non Verbal</a>
+                          </li>
+                        </ul>
+                         <div class="row mobile-login-sign">
+                            <div class="col-6">
+                              <a class="btn btn-block btn-secondary" href="#" data-toggle="modal" data-target="#login-modal">login</a>
+                            </div>
+                            <div class="col-6">
+                              <a class="btn btn-block btn-secondary" href="#" data-toggle="modal" data-target="#sign-up-modal">sign-up</a>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+    </header>
+      <section class="container main-container">
+         <div class="row mt-3">
+         <div class="col-sm-12 col-md-9">
+               <div class="d-block mb-3 text-center">
+                   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- 728-90-ad -->
+                <ins class="adsbygoogle example_responsive_1"
+                     style="display:inline-block;"
+                     data-ad-client="ca-pub-8520541522523188"
+                     data-ad-slot="7255186728"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                </div>
+            <div class="results">
+                <div class="row">
+                            <div class="col-sm-4 col-md-4 text-center result-tile">
+                                <h4>1000+</h4>
+                                <p>Total Questions</p>
+                            </div>
+                            <div class="col-sm-4 col-md-4 text-center result-tile">
+                                <h4>9445</h4>
+                                <p>Test Attempted</p>
+                            </div>
+                            <div class="col-sm-4 col-md-4 text-center">
+                                    <h4>1000+</h4>
+                                    <p>Happy Users</p>
+                            </div>
+                </div>
+            </div>
+            <div class="d-xs-block d-sm-none d-md-none d-lg-none">
+                    <div class="adv">
+                       <div class="click-here">
+                           <a href="">click for the demo</a>
+                        </div>
+                    </div>
+                    <div class="adv">
+                       <div class="jumbotron">big Add</div>
+                    </div>
+                 </div>
+            <div class="row">
+               <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                  <a class="content">
+                    <div class="inner">
+                        <p>Quantitative Aptitude</p>
+                    </div>
+
+                  </a>
+               </div>
+               <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                <a class="content">
+                  <div class="inner">
+                      <p>Demo Exam</p>
+                  </div>
+                </a>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                <a class="content">
+                  <div class="inner">
+                      <p>Programming Help</p>
+                  </div>
+                </a>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                <a class="content">
+                  <div class="inner">
+                      <p>Apptitude</p>
+                  </div>
+                </a>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                <a class="content">
+                  <div class="inner">
+                      <p>Apptitude</p>
+                  </div>
+                </a>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 course-availble">
+                <a class="content">
+                  <div class="inner">
+                      <p>Apptitude</p>
+                  </div>
+                </a>
+             </div>
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-3 d-none d-sm-block d-md-block d-lg-block">
+            <div class="adv">
+               <div class="click-here">
+                   <a href="">click for the demo</a>
+                </div>
+            </div>
+            <div class="adv">
+               <div class="jumbotron">big Add</div>
+            </div>
+         </div>
+         <div class="modal fade modal-user-box" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="login-wrapper">
+                                <div class="actions socialNetLogin">
+                                    <a id="link-facebook-modal-login" class="btn btn-main btn-md pgicon pgicon-facebook pull-left" href="/user/connect/facebook">
+                                        <span class="fbicon"></span><span>Facebook</span></a>
+                                    <a id="link-google-modal-login" class="btn btn-grey btn-md pull-right" href="#">
+                                    <img src="images/signup-google-icon.png" class="" alt="google-icon">
+                                    <span class="google-label">Google</span>
+                                    </a>
+                                </div>
+                                <div class="actions">
+                                    <div class="or-container">
+                                        <hr class="or-hr">
+                                        <div id="or">or</div>
+                                    </div>
+                                </div>
+                                <form>
+                                <div class="form-group">
+                                        <input type="hidden" name="submit" value="">
+                                        <label for="login-userid">Email</label>
+                                        <input class="form-control" id="login-userid" name="userid" placeholder="Email Address" type="email" maxlength="100" required="">
+                                        <span class="error-msg">Please enter email</span>
+                                </div>
+                                <div class="form-group">
+                                        <label for="login-password">Password</label>
+                                        <input class="form-control" id="login-password" name="password" placeholder="Password" type="password" maxlength="32">
+                                        <span class="error-msg">Please enter password</span>
+                                </div>
+                                </form>
+                                <div class="actions">
+                                        <div class="float-right">
+                                            <p><a id="forgot-password" class="openModalLink" href="#" title="Login" data-target="#modal-forgot-password">Forgot Password</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="row">
+                                            <div class="col-md-3">
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <button id="btn_login" class="btn btn-primary btn-md" name="btn_login" type="submit" style="width:100%">Log In</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                                <p>Don't have an account? <a href="#" data-target="#sign-up-modal">Sign Up</a></p>
+                          </div>
+                        </div>
+                      </div>
+         </div>
+         <div class="modal fade modal-user-box" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Sign-up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="login-wrapper">
+                            <div class="actions socialNetLogin">
+                                <a id="link-facebook-modal-login" class="btn btn-main btn-md pgicon pgicon-facebook pull-left" href="/user/connect/facebook">
+                                    <span class="fbicon"></span><span>Facebook</span></a>
+                                <a id="link-google-modal-login" class="btn btn-grey btn-md pull-right" href="#">
+                                <img src="images/signup-google-icon.png" class="" alt="google-icon">
+                                <span class="google-label">Google</span>
+                                </a>
+                            </div>
+                            <div class="actions">
+                                <div class="or-container">
+                                    <hr class="or-hr">
+                                    <div id="or">or</div>
+                                </div>
+                            </div>
+                            <form>
+                            <div class="form-group">
+                                <input type="hidden" name="submit" value="">
+                                <label for="display-name">Display name</label>
+                                <input class="form-control" id="display-name" name="username" placeholder="Please enter the name" type="name" maxlength="100" required="">
+                                <span class="error-msg">Please enter email</span>
+                            </div>
+                            <div class="form-group">
+                                    <input type="hidden" name="submit" value="">
+                                    <label for="login-userid">Email</label>
+                                    <input class="form-control" id="login-userid" name="userid" placeholder="Email Address" type="email" maxlength="100" required="">
+                                    <span class="error-msg">Please enter email</span>
+                            </div>
+                            <div class="form-group">
+                                    <label for="login-password">Password</label>
+                                    <input class="form-control" id="login-password" name="password" placeholder="Password" type="password" maxlength="32">
+                                    <span class="error-msg">Please enter password</span>
+                            </div>
+                            </form>
+                                <div class="actions">
+                                    <div class="row">
+                                        <div class="col-md-3">
+
+                                        </div>
+                                        <div class="col-md-6">
+                                                <button id="btn_sign" class="btn btn-primary btn-md" name="btn_login" type="submit" style="width:100%">Sign Up</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                            <p>
+            Already have an account? <a id="link-sign-up-modal-login" href="#" class="openModalLink" title="Login" data-target="#login-modal">Login</a></p>
+                      </div>
+                    </div>
+                  </div>
+     </div>
+      </section>
+      <footer class="footer-wrapper">
+              <div class="container">
+                  <div class="footer-cont">
+                      <div class="row">
+                          <div class="col-sm-0 col-md-8">
+                            <div class="d-none d-sm-block d-md-block d-lg-block">
+                                <span class="p-2">Lorem Epsum Lorem @ copy right</span>
+                            </div>
+                          </div>
+                            <div class="col-sm-12 col-md-4">
+                                    <div class="float-left p-2">Follow us</div>
+                                    <div class="social-media float-right">
+                                            <ul>
+                                                <li>
+                                                    <a>
+                                                        <span class="ion-social-facebook"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span class="ion-social-twitter-outline"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span class="ion-social-googleplus"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a>
+                                                        <span class="ion-social-linkedin"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </footer>
+   </body>
+</html>
